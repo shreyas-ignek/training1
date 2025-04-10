@@ -1,0 +1,290 @@
+{
+	"configuration": {
+		"className": "com.liferay.object.admin.rest.dto.v1_0.ObjectDefinition",
+		"parameters": {
+			"containsHeaders": "true",
+			"createStrategy": "UPSERT",
+			"importStrategy": "ON_ERROR_FAIL",
+			"updateStrategy": "UPDATE"
+		},
+		"taskItemDelegateName": "DEFAULT"
+	},
+	"items": [
+		{
+			"enableComments": false,
+			"objectRelationships": [],
+			"objectFolderExternalReferenceCode": "school-data",
+			"enableCategorization": true,
+			"accountEntryRestrictedObjectFieldName": "",
+			"objectActions": [],
+			"enableLocalization": false,
+			"accountEntryRestricted": false,
+			"externalReferenceCode": "student-result",
+			"objectFields": [
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Author"
+					},
+					"type": "String",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "creator",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Create Date"
+					},
+					"type": "Date",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "createDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "External Reference Code"
+					},
+					"type": "String",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "externalReferenceCode",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Long",
+					"label": {
+						"en_US": "ID"
+					},
+					"type": "Long",
+					"required": false,
+					"indexedAsKeyword": true,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "id",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Modified Date"
+					},
+					"type": "Date",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "modifiedDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Status"
+					},
+					"type": "String",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "status",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "Integer",
+					"label": {
+						"en_US": "science"
+					},
+					"type": "Integer",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "science",
+					"state": false,
+					"businessType": "Integer",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "Integer",
+					"label": {
+						"en_US": "math"
+					},
+					"type": "Integer",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "math",
+					"state": false,
+					"businessType": "Integer",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "Integer",
+					"label": {
+						"en_US": "english"
+					},
+					"type": "Integer",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "english",
+					"state": false,
+					"businessType": "Integer",
+					"readOnlyConditionExpression": ""
+				}
+			],
+			"restContextPath": "/o/c/results",
+			"scope": "company",
+			"portlet": true,
+			"modifiable": true,
+			"parameterRequired": false,
+			"enableObjectEntryHistory": false,
+			"titleObjectFieldName": "id",
+			"objectValidationRules": [],
+			"active": true,
+			"defaultLanguageId": "en_US",
+			"enableIndexSearch": true,
+			"label": {
+				"en_US": "Result"
+			},
+			"panelCategoryKey": "control_panel.object",
+			"pluralLabel": {
+				"en_US": "Results"
+			},
+			"objectLayouts": [
+				{
+					"objectLayoutTabs": [
+						{
+							"name": {
+								"en_US": "Result"
+							},
+							"objectLayoutBoxes": [
+								{
+									"objectLayoutRows": [
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "math",
+													"size": 4,
+													"priority": 0
+												},
+												{
+													"objectFieldName": "science",
+													"size": 4,
+													"priority": 0
+												},
+												{
+													"objectFieldName": "english",
+													"size": 4,
+													"priority": 0
+												}
+											],
+											"priority": 0
+										}
+									],
+									"collapsable": false,
+									"name": {
+										"en_US": "res"
+									},
+									"priority": 0,
+									"type": "regular"
+								}
+							],
+							"priority": 0
+						}
+					],
+					"objectDefinitionExternalReferenceCode": "student-result",
+					"name": {
+						"en_US": "res"
+					},
+					"defaultObjectLayout": false
+				}
+			],
+			"system": false,
+			"objectViews": [],
+			"enableObjectEntryDraft": false,
+			"name": "Result",
+			"actions": {
+				"permissions": {},
+				"get": {},
+				"update": {},
+				"delete": {},
+				"exportObjectDefinition": {}
+			},
+			"status": {
+				"label_i18n": "Approved",
+				"code": 0,
+				"label": "approved"
+			}
+		}
+	]
+}

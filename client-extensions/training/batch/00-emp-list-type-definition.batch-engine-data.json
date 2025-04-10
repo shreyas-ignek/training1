@@ -1,0 +1,115 @@
+{
+	"configuration": {
+		"className": "com.liferay.headless.admin.list.type.dto.v1_0.ListTypeDefinition",
+		"parameters": {
+			"containsHeaders": "false",
+			"createStrategy": "UPSERT",
+			"importStrategy": "ON_ERROR_FAIL",
+			"updateStrategy": "UPDATE"
+		},
+		"taskItemDelegateName": "DEFAULT"
+	},
+	"items": [
+		{
+			"system": false,
+			"name_i18n": {
+				"en-US": "Designation"
+			},
+			"name": "Designation",
+			"listTypeEntries": [
+				{
+					"name_i18n": {
+						"en-US": "Sr. Software Developer"
+					},
+					"name": "Sr. Software Developer",
+					"type": "",
+					"key": "SrSoftwareDeveloper",
+					"externalReferenceCode": "f41c0b0d-820f-ef6e-0f21-5007598f3068"
+				},
+				{
+					"name_i18n": {
+						"en-US": "Jr. Software Developer"
+					},
+					"name": "Jr. Software Developer",
+					"type": "",
+					"key": "JrSoftwareDeveloper",
+					"externalReferenceCode": "fd0ba9e7-782d-f41e-5efd-d4a38b355cb0"
+				},
+				{
+					"name_i18n": {
+						"en-US": "Trainee Software Developer"
+					},
+					"name": "Trainee Software Developer",
+					"type": "",
+					"key": "TraineeSoftwareDeveloper",
+					"externalReferenceCode": "edff68e2-b7f7-6c57-4459-f9a3406e86c4"
+				},
+				{
+					"name_i18n": {
+						"en-US": "BDE"
+					},
+					"name": "BDE",
+					"type": "",
+					"key": "BDE",
+					"externalReferenceCode": "e1ced22a-3a08-7ba2-307d-26473055a673"
+				},
+				{
+					"name_i18n": {
+						"en-US": "HR"
+					},
+					"name": "HR",
+					"type": "",
+					"key": "HR",
+					"externalReferenceCode": "7acef066-8689-3111-7bf3-9801f07a616f"
+				}
+			],
+			"externalReferenceCode": "employee-designation"
+		},
+		{
+			"system": false,
+			"name_i18n": {
+				"en-US": "City"
+			},
+			"name": "City",
+			"listTypeEntries": [
+				{
+					"name_i18n": {
+						"en-US": "Ahmdabad"
+					},
+					"name": "Ahmdabad",
+					"type": "",
+					"key": "Ahmdabad",
+					"externalReferenceCode": "cfa2586c-fda1-a849-8027-3c4a685c2418"
+				},
+				{
+					"name_i18n": {
+						"en-US": "Pune"
+					},
+					"name": "Pune",
+					"type": "",
+					"key": "Pune",
+					"externalReferenceCode": "4f9ab18f-9ad1-6df2-a42d-465c4551b871"
+				},
+				{
+					"name_i18n": {
+						"en-US": "Udaipur"
+					},
+					"name": "Udaipur",
+					"type": "",
+					"key": "Udaipur",
+					"externalReferenceCode": "50f90a7c-b5d9-31ff-b858-8cfbac997524"
+				},
+				{
+					"name_i18n": {
+						"en-US": "Rajkot"
+					},
+					"name": "Rajkot",
+					"type": "",
+					"key": "Rajkot",
+					"externalReferenceCode": "8064d86f-a346-c492-d787-bc2d93ee27c1"
+				}
+			],
+			"externalReferenceCode": "employee-city"
+		}
+	]
+}

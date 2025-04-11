@@ -1,0 +1,670 @@
+{
+	"configuration": {
+		"className": "com.liferay.object.admin.rest.dto.v1_0.ObjectDefinition",
+		"parameters": {
+			"containsHeaders": "true",
+			"createStrategy": "UPSERT",
+			"importStrategy": "ON_ERROR_FAIL",
+			"updateStrategy": "UPDATE"
+		},
+		"taskItemDelegateName": "DEFAULT"
+	},
+	"items": [
+		{
+			"enableComments": false,
+			"objectRelationships": [],
+			"objectFolderExternalReferenceCode": "school-data",
+			"enableCategorization": true,
+			"accountEntryRestrictedObjectFieldName": "",
+			"objectActions": [
+				{
+					"conditionExpression": "",
+					"objectActionExecutorKey": "add-object-entry",
+					"errorMessage": {},
+					"active": true,
+					"description": "",
+					"label": {
+						"en_US": "add user to user table"
+					},
+					"system": false,
+					"objectActionTriggerKey": "onAfterAdd",
+					"name": "addUserToUserTable",
+					"parameters": {
+						"objectDefinitionExternalReferenceCode": "L_USER",
+						"system": "true",
+						"predefinedValues": [
+							{
+								"name": "alternateName",
+								"inputAsValue": false,
+								"label": {
+									"sv_SE": "Användarnamn",
+									"pt_BR": "Nome de Usuário",
+									"ja_JP": "スクリーン名",
+									"fr_FR": "login",
+									"hu_HU": "Felhasználónév",
+									"de_DE": "Benutzername",
+									"ca_ES": "Nom d'usuari",
+									"ar_SA": "الإسم الظاهر",
+									"fi_FI": "Nimimerkki",
+									"en_US": "Screen Name",
+									"zh_CN": "屏幕显示名称",
+									"es_ES": "Nombre de usuario",
+									"nl_NL": "Gebruikersnaam"
+								},
+								"businessType": "Text",
+								"value": "firstName"
+							},
+							{
+								"name": "emailAddress",
+								"inputAsValue": false,
+								"label": {
+									"sv_SE": "E-postadress",
+									"pt_BR": "Endereço de e-mail",
+									"ja_JP": "メールアドレス",
+									"fr_FR": "Adresse email",
+									"hu_HU": "E-mail cím",
+									"de_DE": "E-Mail-Adresse",
+									"ca_ES": "Adreça de correu electrònic",
+									"ar_SA": "عنوان البريد الإلكتروني",
+									"fi_FI": "Sähköpostiosoite",
+									"en_US": "Email Address",
+									"zh_CN": "电子邮件地址",
+									"es_ES": "Dirección de correo",
+									"nl_NL": "E-mailadres"
+								},
+								"businessType": "Text",
+								"value": "email"
+							},
+							{
+								"name": "familyName",
+								"inputAsValue": false,
+								"label": {
+									"sv_SE": "Efternamn",
+									"pt_BR": "Sobrenome",
+									"ja_JP": "姓",
+									"fr_FR": "Nom",
+									"hu_HU": "Vezetéknév",
+									"de_DE": "Nachname",
+									"ca_ES": "Cognom",
+									"ar_SA": "الإسم الأخير",
+									"fi_FI": "Sukunimi",
+									"en_US": "Last Name",
+									"zh_CN": "姓",
+									"es_ES": "Apellido",
+									"nl_NL": "Achternaam"
+								},
+								"businessType": "Text",
+								"value": "firstName"
+							},
+							{
+								"name": "givenName",
+								"inputAsValue": false,
+								"label": {
+									"sv_SE": "Tilltalsnamn",
+									"pt_BR": "Nome",
+									"ja_JP": "名",
+									"fr_FR": "Prénom",
+									"hu_HU": "Keresztnév",
+									"de_DE": "Vorname",
+									"ca_ES": "Nom",
+									"ar_SA": "الإسم الأول",
+									"fi_FI": "Etunimi",
+									"en_US": "First Name",
+									"zh_CN": "名字",
+									"es_ES": "Nombre",
+									"nl_NL": "Voornaam"
+								},
+								"businessType": "Text",
+								"value": "firstName"
+							}
+						]
+					},
+					"status": {
+						"label_i18n": "Never Ran",
+						"code": 0,
+						"label": "never-ran"
+					}
+				},
+				{
+					"conditionExpression": "",
+					"objectActionExecutorKey": "notification",
+					"errorMessage": {},
+					"active": true,
+					"description": "",
+					"label": {
+						"en_US": "send mail"
+					},
+					"system": false,
+					"objectActionTriggerKey": "onAfterAdd",
+					"name": "sendMail",
+					"parameters": {
+						"usePreferredLanguageForGuests": true,
+						"type": "email",
+						"notificationTemplateId": 36224
+					},
+					"status": {
+						"label_i18n": "Never Ran",
+						"code": 0,
+						"label": "never-ran"
+					}
+				}
+			],
+			"enableLocalization": false,
+			"accountEntryRestricted": false,
+			"externalReferenceCode": "employee",
+			"objectFields": [
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Author"
+					},
+					"type": "String",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "creator",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Create Date"
+					},
+					"type": "Date",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "createDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "External Reference Code"
+					},
+					"type": "String",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "externalReferenceCode",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Long",
+					"label": {
+						"en_US": "ID"
+					},
+					"type": "Long",
+					"required": false,
+					"indexedAsKeyword": true,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "id",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Modified Date"
+					},
+					"type": "Date",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "modifiedDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Status"
+					},
+					"type": "String",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "status",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Name"
+					},
+					"type": "String",
+					"required": true,
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "firstName",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"listTypeDefinitionExternalReferenceCode": "employee-designation",
+					"indexed": true,
+					"defaultValue": "TraineeSoftwareDeveloper",
+					"localized": false,
+					"objectFieldSettings": [
+						{
+							"name": "stateFlow",
+							"value": {
+								"objectStates": [
+									{
+										"objectStateTransitions": [
+											{
+												"key": "JrSoftwareDeveloper"
+											},
+											{
+												"key": "TraineeSoftwareDeveloper"
+											},
+											{
+												"key": "BDE"
+											},
+											{
+												"key": "HR"
+											}
+										],
+										"key": "SrSoftwareDeveloper"
+									},
+									{
+										"objectStateTransitions": [
+											{
+												"key": "SrSoftwareDeveloper"
+											}
+										],
+										"key": "JrSoftwareDeveloper"
+									},
+									{
+										"objectStateTransitions": [
+											{
+												"key": "JrSoftwareDeveloper"
+											}
+										],
+										"key": "TraineeSoftwareDeveloper"
+									},
+									{
+										"objectStateTransitions": [
+											{
+												"key": "SrSoftwareDeveloper"
+											},
+											{
+												"key": "JrSoftwareDeveloper"
+											},
+											{
+												"key": "TraineeSoftwareDeveloper"
+											},
+											{
+												"key": "HR"
+											}
+										],
+										"key": "BDE"
+									},
+									{
+										"objectStateTransitions": [
+											{
+												"key": "SrSoftwareDeveloper"
+											},
+											{
+												"key": "JrSoftwareDeveloper"
+											},
+											{
+												"key": "TraineeSoftwareDeveloper"
+											},
+											{
+												"key": "BDE"
+											}
+										],
+										"key": "HR"
+									}
+								]
+							}
+						},
+						{
+							"name": "defaultValueType",
+							"value": "inputAsValue"
+						},
+						{
+							"name": "defaultValue",
+							"value": "TraineeSoftwareDeveloper"
+						}
+					],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Designation"
+					},
+					"type": "String",
+					"required": true,
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "designation",
+					"state": true,
+					"businessType": "Picklist",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [
+						{
+							"name": "initialValue",
+							"value": "1"
+						}
+					],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Sr No."
+					},
+					"type": "String",
+					"required": false,
+					"indexedAsKeyword": true,
+					"system": false,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "srNo",
+					"state": false,
+					"businessType": "AutoIncrement",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "Long",
+					"label": {
+						"en_US": "Phone"
+					},
+					"type": "Long",
+					"required": true,
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "phone",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Email"
+					},
+					"type": "String",
+					"required": true,
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "email",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"listTypeDefinitionExternalReferenceCode": "employee-city",
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "city"
+					},
+					"type": "String",
+					"required": true,
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "city",
+					"state": false,
+					"businessType": "Picklist",
+					"readOnlyConditionExpression": ""
+				}
+			],
+			"restContextPath": "/o/c/employees",
+			"scope": "company",
+			"portlet": true,
+			"modifiable": true,
+			"parameterRequired": false,
+			"enableObjectEntryHistory": false,
+			"titleObjectFieldName": "srNo",
+			"objectValidationRules": [
+				{
+					"engineLabel": "Expression Builder",
+					"active": false,
+					"outputType": "fullValidation",
+					"script": "isEmailAddress(email)\n",
+					"objectDefinitionExternalReferenceCode": "employee",
+					"system": false,
+					"engine": "ddm",
+					"objectValidationRuleSettings": [],
+					"name": {
+						"en_US": "ss"
+					},
+					"errorLabel": {
+						"en_US": "error"
+					}
+				}
+			],
+			"active": true,
+			"defaultLanguageId": "en_US",
+			"enableIndexSearch": true,
+			"label": {
+				"en_US": "Employee"
+			},
+			"panelCategoryKey": "control_panel.object",
+			"pluralLabel": {
+				"en_US": "Employees"
+			},
+			"objectLayouts": [
+				{
+					"objectLayoutTabs": [
+						{
+							"name": {
+								"en_US": "Demo"
+							},
+							"objectLayoutBoxes": [
+								{
+									"objectLayoutRows": [
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "firstName",
+													"size": 6,
+													"priority": 0
+												},
+												{
+													"objectFieldName": "designation",
+													"size": 6,
+													"priority": 0
+												}
+											],
+											"priority": 0
+										},
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "phone",
+													"size": 6,
+													"priority": 0
+												},
+												{
+													"objectFieldName": "email",
+													"size": 6,
+													"priority": 0
+												}
+											],
+											"priority": 0
+										},
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "city",
+													"size": 6,
+													"priority": 0
+												}
+											],
+											"priority": 0
+										}
+									],
+									"collapsable": false,
+									"name": {
+										"en_US": "detail"
+									},
+									"priority": 0,
+									"type": "regular"
+								}
+							],
+							"priority": 0
+						}
+					],
+					"objectDefinitionExternalReferenceCode": "employee",
+					"name": {
+						"en_US": "emp-layout"
+					},
+					"defaultObjectLayout": true
+				}
+			],
+			"system": false,
+			"objectViews": [
+				{
+					"objectDefinitionExternalReferenceCode": "employee",
+					"name": {
+						"en_US": "emp-view"
+					},
+					"objectViewFilterColumns": [],
+					"objectViewSortColumns": [
+						{
+							"objectFieldName": "srNo",
+							"sortOrder": "asc",
+							"priority": 0
+						}
+					],
+					"defaultObjectView": true,
+					"objectViewColumns": [
+						{
+							"objectFieldName": "srNo",
+							"label": {
+								"en_US": "Sr No."
+							},
+							"priority": 0
+						},
+						{
+							"objectFieldName": "firstName",
+							"label": {
+								"en_US": "Name"
+							},
+							"priority": 1
+						},
+						{
+							"objectFieldName": "designation",
+							"label": {
+								"en_US": "Designation"
+							},
+							"priority": 2
+						},
+						{
+							"objectFieldName": "phone",
+							"label": {
+								"en_US": "Phone"
+							},
+							"priority": 3
+						},
+						{
+							"objectFieldName": "email",
+							"label": {
+								"en_US": "Email"
+							},
+							"priority": 4
+						},
+						{
+							"objectFieldName": "city",
+							"label": {
+								"en_US": "city"
+							},
+							"priority": 5
+						}
+					]
+				}
+			],
+			"enableObjectEntryDraft": false,
+			"name": "Employee",
+			"actions": {
+				"permissions": {},
+				"get": {},
+				"update": {},
+				"delete": {},
+				"exportObjectDefinition": {}
+			},
+			"status": {
+				"label_i18n": "Approved",
+				"code": 0,
+				"label": "approved"
+			}
+		}
+	]
+}

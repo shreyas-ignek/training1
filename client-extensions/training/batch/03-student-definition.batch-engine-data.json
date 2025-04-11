@@ -1,0 +1,251 @@
+{
+	"configuration": {
+		"className": "com.liferay.object.admin.rest.dto.v1_0.ObjectDefinition",
+		"parameters": {
+			"containsHeaders": "true",
+			"createStrategy": "UPSERT",
+			"importStrategy": "ON_ERROR_FAIL",
+			"updateStrategy": "UPDATE"
+		},
+		"taskItemDelegateName": "DEFAULT"
+	},
+	"items": [
+		{
+			"enableComments": false,
+			"objectFolderExternalReferenceCode": "school-data",
+			"enableCategorization": true,
+			"accountEntryRestrictedObjectFieldName": "",
+			"objectActions": [],
+			"enableLocalization": false,
+			"accountEntryRestricted": false,
+			"externalReferenceCode": "student-data",
+			"objectRelationships": [
+				{
+					"objectDefinitionSystem2": false,
+					"objectField": {
+						"relationshipType": "oneToMany",
+						"indexed": true,
+						"localized": false,
+						"objectFieldSettings": [
+							{
+								"name": "objectDefinition1ShortName",
+								"value": "Student"
+							},
+							{
+								"name": "objectRelationshipERCObjectFieldName",
+								"value": "r_result_c_studentERC"
+							}
+						],
+						"readOnly": "false",
+						"DBType": "Long",
+						"label": {
+							"en_US": "result"
+						},
+						"type": "Long",
+						"required": false,
+						"indexedAsKeyword": false,
+						"system": false,
+						"indexedLanguageId": "",
+						"unique": false,
+						"name": "r_result_c_studentId",
+						"objectDefinitionExternalReferenceCode1": "student-data",
+						"state": false,
+						"businessType": "Relationship",
+						"readOnlyConditionExpression": ""
+					},
+					"parameterObjectFieldName": "",
+					"parameterObjectFieldId": 0,
+					"label": {
+						"en_US": "result"
+					},
+					"reverse": false,
+					"type": "oneToMany",
+					"objectDefinitionModifiable2": true,
+					"system": false,
+					"name": "result",
+					"deletionType": "prevent",
+					"objectDefinitionExternalReferenceCode1": "student-data",
+					"objectDefinitionExternalReferenceCode2": "student-result",
+					"objectDefinitionName2": "Result"
+				}
+			],
+			"objectFields": [
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Author"
+					},
+					"type": "String",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "creator",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Create Date"
+					},
+					"type": "Date",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "createDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "External Reference Code"
+					},
+					"type": "String",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "externalReferenceCode",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Long",
+					"label": {
+						"en_US": "ID"
+					},
+					"type": "Long",
+					"required": false,
+					"indexedAsKeyword": true,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "id",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Modified Date"
+					},
+					"type": "Date",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "modifiedDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Status"
+					},
+					"type": "String",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "status",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Name"
+					},
+					"type": "String",
+					"required": true,
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "name",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				}
+			],
+			"restContextPath": "/o/c/students",
+			"scope": "company",
+			"portlet": true,
+			"modifiable": true,
+			"parameterRequired": false,
+			"enableObjectEntryHistory": false,
+			"titleObjectFieldName": "name",
+			"objectValidationRules": [],
+			"active": true,
+			"defaultLanguageId": "en_US",
+			"enableIndexSearch": true,
+			"label": {
+				"en_US": "student"
+			},
+			"panelCategoryKey": "control_panel.object",
+			"pluralLabel": {
+				"en_US": "students"
+			},
+			"objectLayouts": [],
+			"system": false,
+			"objectViews": [],
+			"enableObjectEntryDraft": false,
+			"name": "Student",
+			"actions": {
+				"permissions": {},
+				"get": {},
+				"update": {},
+				"delete": {},
+				"exportObjectDefinition": {}
+			},
+			"status": {
+				"label_i18n": "Approved",
+				"code": 0,
+				"label": "approved"
+			}
+		}
+	]
+}
